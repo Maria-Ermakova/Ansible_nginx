@@ -1,0 +1,7 @@
+- name: Deploy NGINX on a non-standard port using the role
+  hosts: ClientAnsible
+  become: yes
+  gather_facts: yes
+
+  roles:
+    - nginx_role
